@@ -115,7 +115,7 @@ stages:
           ls -la dist
         displayName: Build python package
 
-      - task: PublishBuildArtifacts@1
+      - task: PublishBuildArtifacts@1.200.0
         inputs:
           pathToPublish: dist/
           artifactName: python-release
